@@ -121,7 +121,8 @@ body {
 @media(max-width:412px){
     .myclient2 img {
         width: 150px;
-        margin-left: 0px;
+        margin-left:0px;
+       
     }
     .myclient1 div {
         font-size: 18px;
@@ -166,16 +167,17 @@ body {
         display: block;
         justify-content: center;
         padding: 10px;
-        margin-left: 10px;
+        padding-left: 0px;
+        margin-left: 0px;
         margin-top: 10px;
         margin-right: 20px;
-    
+        
     }
     .most div {
-        margin: 20px;
+        margin:20px;
         padding: 10px;
         border-right: none;
-        padding-left: 10px;
+        padding-left: 0px;
         padding-right: 20px;
     
     }
@@ -246,7 +248,14 @@ body {
 @media(max-width:412px){
     .myskill {
         display: block;
-       margin-left: 5px;
+       margin-left: 0px;
+       justify-content: flex-start;
+    }
+    .myskill1 {
+        /* border: 2px solid red; */
+        width: 380px;
+        margin: 10px;
+        margin-top: 90px;
     }
     .myskill1 h1 {
         font-size: 40px;
@@ -260,7 +269,7 @@ body {
     .myskill2 {
         width: 300px;
         height: 240px;
-        margin: 30px;
+        margin: 10px;
     }
     .myskill2 table {
         font-size: 12px;
@@ -278,72 +287,73 @@ body {
     }
 }
 /* ========number======== */
-  .number{
-    display: flex;
-    justify-content: center;
-   
-    width: 1100px;
-    margin-left: 250px;
-    margin-top: 100px;
-}
-
-.num1 div{
-    font-size: 70px;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: rgb(25, 25, 88);
-    border-bottom: 5px solid rgb(16, 16, 71);
-    margin-bottom: 100px;
-}
-
-.number span {
-    font-size: 25px;
-    margin-top: 15px;
-    color: rgb(30, 30, 95);
-    padding-left: 10px;
-} 
-/* .number{
-    display: flex;
-    border: 2px solid black;
-    justify-content: center;
-}
-.number div{
-    border: 2px solid blue;
-    margin-right: 50px;
-}
-.numspan1{
+.duplinumber{
+    display: none;
     font-size: 50px;
+    margin-top: 30px;
+    color: rgb(34, 34, 117);
+    margin-left: 10px;
 }
-.numspan2{
-    font-size: 25px;
-    margin-top:-30px;
-} */
+.duplinumber div{
+    border-bottom: 3px solid rgb(38, 38, 114);
+    width: 100px;
+    font-weight: bold;
+}
+.duplinumber span{
+    font-size: 30px;
+    color:rgb(127, 127, 177);
 
-@media(max-width:412px){
-    .number {
-        display: block;
-        justify-content: center;
-        width: 100px;
-        margin-left: 15px;
-        margin-top: 100px;
-    }
-    .num1 div{
-        font-size: 50px;
-        margin-left: 10px;
-        padding-right: 5px;
-        color: rgb(25, 25, 88);
-        border-bottom: 5px solid rgb(16, 16, 71);
-        margin-bottom: 100px;
-    }
-    .num1 span {
-        display: flex;
-        font-size: 15px;
-        margin-top: 0px;
-        color: rgb(30, 30, 95);
-        padding-left: 10px;
-    }
-    
 }
+ .number{
+    margin-top: 100px;
+    width: 90%;
+    height: 150px;
+ } 
+ .number a{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 250px;
+    color: rgb(34, 34, 114);
+ }
+ .num1{
+    display: flex;
+    margin-left: 230px;
+    font-size: 25px;
+    margin-top: -160px;
+    height: 120px;
+    font-weight: 600;
+    color: rgb(96, 96, 154);
+
+ }
+ #numd1{
+    margin-left: 116px;
+    margin-top: -5px;
+ }
+ #numd2{
+    margin-left: 105px;
+    margin-top: -5px;
+ }
+ #numd3{
+    margin-left: 183px;
+    margin-top: -5px;
+ }
+@media(max-width:412px){
+    .number{
+        display: none;
+    }
+    .num1{
+        display: none;
+    }
+    .duplinumber{
+        display: block;
+    }
+
+}
+
+
+
+
 /* ==============about me=============== */
 .about {
     display: grid;
@@ -1254,6 +1264,7 @@ body {
         padding-top: 20px;
         margin-bottom: 100px;
         margin-left: 10px;
+        height: 400px;
     }
     .contact2 div{
         margin: 20px;
